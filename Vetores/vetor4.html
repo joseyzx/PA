@@ -1,0 +1,18 @@
+<script>
+    let vetorA = [];
+
+    let soma = 0;
+    
+    for (let i=0; i< 11; i++) {
+
+        vetorA[i] = parseInt(prompt("Digite um Número"));
+
+        soma = soma + vetorA[i];
+    }
+
+    let media = soma / 10;
+ 
+    document.write("Vetor A: ", vetorA + "<br>");
+    document.write("Soma: ", soma + "<br>");
+    document.write("Média: ", media);
+</script>

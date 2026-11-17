@@ -1,0 +1,19 @@
+<script>
+var i = 0;
+var opcao = 1;
+var anoAtual, anoNasc, idade;
+do {
+    anoAtual = Number(prompt("Digite o ano atual:"));
+    anoNasc = Number(prompt("Digite o ano de nascimento:"));
+    idade = anoAtual - anoNasc;
+    if (idade >= 18) {
+        document.write("Maior de idade<br>");
+    } else {
+        document.write("Menor de idade<br>");
+    }
+    i++;
+    opcao = Number(prompt("Deseja continuar? (1-SIM ou 2-NAO)"));
+} while (opcao != 2);
+
+document.write("Total de pessoas verificadas: " + i);
+</script>

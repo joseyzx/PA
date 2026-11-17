@@ -1,0 +1,13 @@
+<script>
+    var anoAtual = parseInt(prompt("Digite o ano atual:"));
+    var anoNasc, idade, maior, menor;
+    for (var i = 1; i <= 5; i++) {
+        anoNasc = parseInt(prompt("Ano de nascimento:"));
+        idade = anoAtual - anoNasc;
+        document.write("Idade: " + idade + " anos<br>");
+        if (i == 1 || idade > maior) { maior = idade; }
+        if (i == 1 || idade < menor) { menor = idade; }
+    }
+    document.write("Mais velho: " + maior + " anos<br>");
+    document.write("Mais novo: " + menor + " anos<br>");
+</script>

@@ -1,0 +1,27 @@
+<script>
+var vetor = [];
+var i;
+var numero;
+var encontrou = false;
+
+for (i = 0; i < 10; i++) {
+    vetor[i] = Number(prompt("Digite um número inteiro:"));
+}
+
+numero = Number(prompt("Digite o número que deseja pesquisar:"));
+
+for (i = 0; i < 10; i++) {
+    if (vetor[i] == numero) {
+        encontrou = true;
+    }
+}
+
+document.write("Vetor: " + vetor + "<br>");
+
+if (encontrou == true) {
+    document.write("Número encontrado!");
+} else {
+    document.write("Número não encontrado!");
+}
+</script>
+
